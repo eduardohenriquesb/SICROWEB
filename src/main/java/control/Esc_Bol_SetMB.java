@@ -3,13 +3,16 @@ package control;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import javax.faces.bean.ManagedBean;
+
 import model.Esc_Bol_Set;
 import model.Escala;
 import model.Bolsista;
 import model.Setor;
 
 
-
+@ManagedBean
 public class Esc_Bol_SetMB {
 	private Esc_Bol_Set objeto;
 	private List<Esc_Bol_Set> objetos;

@@ -1,9 +1,13 @@
 package control;
 
 import java.util.ArrayList;
+
+import javax.faces.bean.ManagedBean;
+
 import dao.SetorDAO;
 import model.Setor;
 
+@ManagedBean
 public class SetorMB {
 	
 	private Setor setor;

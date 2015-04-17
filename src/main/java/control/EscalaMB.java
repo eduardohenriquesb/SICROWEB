@@ -1,9 +1,13 @@
 package control;
 import java.util.*;
 
+import javax.faces.bean.ManagedBean;
+
 import model.Escala;
 import model. Esc_Bol_Set;
 
+
+@ManagedBean
 public class EscalaMB {
 	
 	private Escala escala;
