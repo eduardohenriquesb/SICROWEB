@@ -4,30 +4,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
-    
-     <managed-bean>
-        <managed-bean-name>bolsistaBean</managed-bean-name>
-        <managed-bean-class>control.BolsistaMB</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    
-    <managed-bean>
-        <managed-bean-name>setorBean</managed-bean-name>
-        <managed-bean-class>control.SetorMB</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    
-     <managed-bean>
-        <managed-bean-name>escalaBean</managed-bean-name>
-        <managed-bean-class>control.EscalaMB</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    
+       
     <navigation-rule>
-    	<from-view-id>index.xhtml</from-view-id>
+    	<from-view-id>index.jsf</from-view-id>
     		<navigation-case>
     			<from-outcome>cadastrarBolsista</from-outcome>
-    			<to-view-id>/cadastrarBolsista.xhtml</to-view-id> 		
+    			<to-view-id>/cadastrarBolsista.jsf</to-view-id> 		
     		</navigation-case>  
     		<navigation-case>
     			<from-outcome>pesquisarBolsista</from-outcome>

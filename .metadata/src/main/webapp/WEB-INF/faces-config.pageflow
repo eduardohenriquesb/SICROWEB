@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14295561138940" configfile="/SicroWeb/src/main/webapp/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14295561138940" configfile="/SicroWeb/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="770" y="1138" id="pf14295581196551" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" outlinks="pf14295581196562 pf14295581196563 pf14295581196564 pf14295581196565 pf14295581196566 pf14295581196567" inlinks="pf14295581196568 pf14295581196569 pf142955811965610 pf142955811965611 pf142955811965612" path="index.jsf"/>
+  <nodes xsi:type="pageflow:PFPage" name="cadastrarBolsista.xhtml" x="986" y="178" id="pf142955811965613" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14295581196562" path="/cadastrarBolsista.jsf"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarBolsista.xhtml" x="986" y="562" id="pf142955811965614" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14295581196563" path="/pesquisarBolsista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="alterarBolsista.xhtml" x="986" y="946" id="pf142955811965615" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14295581196564" path="/alterarBolsista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="cadastrarSetor.xhtml" x="986" y="1330" id="pf142955811965716" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf14295581196565" path="/cadastrarSetor.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarSetor.xhtml" x="986" y="1714" id="pf142955811965717" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf14295581196566" path="/pesquisarSetor.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="alterarSetor.xhtml" x="986" y="2098" id="pf142955811965718" referenceLink="//@navigationRule.0/@navigationCase.5/@toViewId|" inlinks="pf14295581196567" path="/alterarSetor.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="cadastrarBolsista.xhtml" x="338" y="752" id="pf142955811965719" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14295581196568 pf142955811965720" path="cadastrarBolsista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="sucesso.xhtml" x="554" y="1222" id="pf142955811965721" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf142955811965612" inlinks="pf142955811965720 pf142955811965722 pf142955811965723 pf142955811965724 pf142955811965725" path="sucesso.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarBolsista.xhtml" x="338" y="368" id="pf142955811965726" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf142955811965727 pf14295581196569" inlinks="pf142955811965728" path="pesquisarBolsista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarBolsista2.xhtml" x="554" y="368" id="pf142955811965729" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf142955811965727" path="/pesquisarBolsista2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarBolsista2.xhtml" x="122" y="1136" id="pf142955811965730" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf142955811965728 pf142955811965731 pf142955811965722" path="pesquisarBolsista2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="alterarBolsista.xhtml" x="338" y="1136" id="pf142955811965732" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf142955811965723" inlinks="pf142955811965731" path="alterarBolsista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="cadastrarSetor.xhtml" x="338" y="1541" id="pf142955811965733" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf142955811965610 pf142955811965724" path="cadastrarSetor.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarSetor.xhtml" x="554" y="1627" id="pf142955811965734" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" outlinks="pf142955811965735 pf142955811965611" inlinks="pf142955811965736" path="pesquisarSetor.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarSetor2.xhtml" x="770" y="1627" id="pf142955811965737" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf142955811965735" path="/pesquisarSetor2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pesquisarSetor2.xhtml" x="338" y="1925" id="pf142955811965738" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf142955811965736 pf142955811965739 pf142955811965725" path="pesquisarSetor2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="alterarSetor.xhtml" x="554" y="2011" id="pf142955811965840" referenceLink="//@navigationRule.7/@navigationCase.1/@toViewId|" inlinks="pf142955811965739" path="alterarSetor.xhtml"/>
+  <links id="pf14295581196562" target="pf142955811965613" source="pf14295581196551" outcome="cadastrarBolsista"/>
+  <links id="pf14295581196563" target="pf142955811965614" source="pf14295581196551" outcome="pesquisarBolsista"/>
+  <links id="pf14295581196564" target="pf142955811965615" source="pf14295581196551" outcome="alterarBolsista"/>
+  <links id="pf14295581196565" target="pf142955811965716" source="pf14295581196551" outcome="cadastrarSetor"/>
+  <links id="pf14295581196566" target="pf142955811965717" source="pf14295581196551" outcome="pesquisarSetor"/>
+  <links id="pf14295581196567" target="pf142955811965718" source="pf14295581196551" outcome="alterarSetor"/>
+  <links id="pf14295581196568" target="pf14295581196551" source="pf142955811965719" outcome="voltar"/>
+  <links id="pf142955811965720" target="pf142955811965721" source="pf142955811965719" outcome="salvar"/>
+  <links id="pf142955811965727" target="pf142955811965729" source="pf142955811965726" outcome="pesquisarBolsista"/>
+  <links id="pf14295581196569" target="pf14295581196551" source="pf142955811965726" outcome="voltar"/>
+  <links id="pf142955811965728" target="pf142955811965726" source="pf142955811965730" outcome="voltar"/>
+  <links id="pf142955811965731" target="pf142955811965732" source="pf142955811965730" outcome="alterar"/>
+  <links id="pf142955811965722" target="pf142955811965721" source="pf142955811965730" outcome="remover"/>
+  <links id="pf142955811965723" target="pf142955811965721" source="pf142955811965732" outcome="alterar2"/>
+  <links id="pf142955811965610" target="pf14295581196551" source="pf142955811965733" outcome="voltar"/>
+  <links id="pf142955811965724" target="pf142955811965721" source="pf142955811965733" outcome="salvar"/>
+  <links id="pf142955811965735" target="pf142955811965737" source="pf142955811965734" outcome="pesquisarSetor"/>
+  <links id="pf142955811965611" target="pf14295581196551" source="pf142955811965734" outcome="voltar"/>
+  <links id="pf142955811965736" target="pf142955811965734" source="pf142955811965738" outcome="voltar"/>
+  <links id="pf142955811965739" target="pf142955811965840" source="pf142955811965738" outcome="alterar"/>
+  <links id="pf142955811965725" target="pf142955811965721" source="pf142955811965738" outcome="remover"/>
+  <links id="pf142955811965612" target="pf14295581196551" source="pf142955811965721" outcome="voltar"/>
+</pageflow:Pageflow>
