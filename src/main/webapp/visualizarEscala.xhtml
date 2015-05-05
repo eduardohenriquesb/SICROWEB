@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:c="http://java.sun.com/jsf/core"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>ESCALA</title>
+</h:head>
+<h:body>
+	<h:form>
+			
+		<h:panelGrid columns="5">
+		
+		<f:facet name="header">
+					<h2>ESCALA MANHÃ SEMANA 01</h2>				
+		</f:facet>
+					
+		<p:dataTable id="tableSetores" value="#{setorBean.setores}" var="s">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="SETOR" />					
+				</f:facet>	
+				<h:outputText style="font-weight:bold" value="#{s.nome}" />		
+			</p:column>
+			
+		</p:dataTable>
+
+		<p:dataTable id="tableBolsistas" value="#{atividadeBean.atividadesManha1}" var="b">
+			
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="07:00 - 08:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+																
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas1" value="#{atividadeBean.atividadesManha2}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="08:00 - 09:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas2" value="#{atividadeBean.atividadesManha3}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="09:00 - 10:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas3" value="#{atividadeBean.atividadesManha4}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="10:00 - 11:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+	</h:panelGrid>
+	
+	<h:panelGrid columns="5">
+		
+		<f:facet name="header">
+					<h2>ESCALA MANHÃ SEMANA 02</h2>				
+		</f:facet>
+					
+		<p:dataTable id="tableSetores2" value="#{setorBean.setores}" var="s">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="SETOR" />					
+				</f:facet>	
+				<h:outputText style="font-weight:bold" value="#{s.nome}" />		
+			</p:column>
+			
+		</p:dataTable>
+
+		<p:dataTable id="tableBolsistas11" value="#{atividadeBean.atividadesManha11}" var="b">
+			
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="07:00 - 08:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+																
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas12" value="#{atividadeBean.atividadesManha12}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="08:00 - 09:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas13" value="#{atividadeBean.atividadesManha13}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="09:00 - 10:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas14" value="#{atividadeBean.atividadesManha14}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="10:00 - 11:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+	</h:panelGrid>
+	
+	<h:panelGrid columns="5">
+		
+		<f:facet name="header">
+					<h2>ESCALA MANHÃ SEMANA 03</h2>				
+		</f:facet>
+					
+		<p:dataTable id="tableSetores3" value="#{setorBean.setores}" var="s">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="SETOR" />					
+				</f:facet>	
+				<h:outputText style="font-weight:bold" value="#{s.nome}" />		
+			</p:column>
+			
+		</p:dataTable>
+
+		<p:dataTable id="tableBolsistas21" value="#{atividadeBean.atividadesManha21}" var="b">
+			
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="07:00 - 08:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+																
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas22" value="#{atividadeBean.atividadesManha22}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="08:00 - 09:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas23" value="#{atividadeBean.atividadesManha23}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="09:00 - 10:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas24" value="#{atividadeBean.atividadesManha24}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="10:00 - 11:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+	</h:panelGrid>
+	
+	<h:panelGrid columns="5">
+		
+		<f:facet name="header">
+					<h2>ESCALA MANHÃ SEMANA 04</h2>				
+		</f:facet>
+					
+		<p:dataTable id="tableSetores4" value="#{setorBean.setores}" var="s">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="SETOR" />					
+				</f:facet>	
+				<h:outputText style="font-weight:bold" value="#{s.nome}" />		
+			</p:column>
+			
+		</p:dataTable>
+
+		<p:dataTable id="tableBolsistas31" value="#{atividadeBean.atividadesManha31}" var="b">
+			
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="07:00 - 08:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+																
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas32" value="#{atividadeBean.atividadesManha32}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="08:00 - 09:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas33" value="#{atividadeBean.atividadesManha33}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="09:00 - 10:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+		<p:dataTable id="tableBolsistas34" value="#{atividadeBean.atividadesManha34}" var="b">
+		
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="10:00 - 11:00" />
+				</f:facet>
+				<h:outputText value="#{b.nome}" />
+			</p:column>
+			
+		</p:dataTable>
+		
+	</h:panelGrid>
+	
+	
+	
+	
+	
+	
+	<p:commandButton id="btnV" value="Voltar" type="submit" action ="#{bolsistaBean.voltar}" />
+		
+	</h:form>
+
+</h:body>
+</html>
