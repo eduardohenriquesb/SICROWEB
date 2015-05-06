@@ -1,10 +1,13 @@
 package model;
 
+
 public class Escala {
 	private String data;
 	private String horInicio;
 	private String horFim;
 	private String turno;
+	
+	
 	
 	public Escala(){
 		

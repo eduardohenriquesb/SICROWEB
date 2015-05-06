@@ -28,9 +28,7 @@ public class BolsistaDAO extends AbstractDAO<Bolsista> {
 				bolsista = new Bolsista();
 				bolsista.setMatricula(rs.getInt(1));
 				bolsista.setNome(rs.getString(2));
-				bolsista.setHorInicio(rs.getString(3));
-				bolsista.setHorFim(rs.getString(4));
-				bolsista.setTurno(rs.getString(5));
+				bolsista.setTurno(rs.getString(3));
 				lista.add(bolsista);
 			}
 			rs.close();
@@ -51,9 +49,7 @@ public class BolsistaDAO extends AbstractDAO<Bolsista> {
 				Bolsista bolsista = new Bolsista();
 				bolsista.setMatricula(rs.getInt(1));
 				bolsista.setNome(rs.getString(2));
-				bolsista.setHorInicio(rs.getString(3));
-				bolsista.setHorFim(rs.getString(4));
-				bolsista.setTurno(rs.getString(5));
+				bolsista.setTurno(rs.getString(3));
 				lista.add(bolsista);
 			}
 			rs.close();
@@ -68,12 +64,10 @@ public class BolsistaDAO extends AbstractDAO<Bolsista> {
 	@Override
 	public void adicionar(Bolsista bolsista) {
 		try {
-			PreparedStatement ptmt = conn.prepareStatement("insert into bolsista(matricula, nome , hInicio, hFim, turno) values (?, ?,?,?,?)");
+			PreparedStatement ptmt = conn.prepareStatement("insert into bolsista(matricula, nome , turno) values (?, ?,?)");
 			ptmt.setInt(1, bolsista.getMatricula());		
 			ptmt.setString(2, bolsista.getNome());	
-			ptmt.setString(3, bolsista.getHorInicio());
-			ptmt.setString(4, bolsista.getHorFim());
-			ptmt.setString(5, bolsista.getTurno());
+			ptmt.setString(3, bolsista.getTurno());
 			ptmt.executeUpdate();
 			ptmt.close();
 		} catch (SQLException e) {
@@ -97,13 +91,11 @@ public class BolsistaDAO extends AbstractDAO<Bolsista> {
 	
 	public void atualizar(Bolsista bolsista){
 		try {
-			PreparedStatement ptmt = conn.prepareStatement("UPDATE bolsista set nome = ?, hinicio = ?, hfim = ? ,turno = ? where matricula = ?");								
+			PreparedStatement ptmt = conn.prepareStatement("UPDATE bolsista set nome = ?, turno = ? where matricula = ?");								
 			
 			ptmt.setString(1, bolsista.getNome());		
-			ptmt.setString(2, bolsista.getHorInicio());
-			ptmt.setString(3, bolsista.getHorFim());
-			ptmt.setString(4, bolsista.getTurno());
-			ptmt.setInt(5, bolsista.getMatricula());
+			ptmt.setString(2, bolsista.getTurno());
+			ptmt.setInt(3, bolsista.getMatricula());
 						
 			ptmt.executeUpdate();
 			ptmt.close();

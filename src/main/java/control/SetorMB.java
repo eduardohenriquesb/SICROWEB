@@ -2,16 +2,16 @@ package control;
 
 import java.util.ArrayList;
 
-import javax.faces.bean.ManagedBean;
+
+import java.util.List;
 
 import dao.SetorDAO;
 import model.Setor;
 
-@ManagedBean
 public class SetorMB {
 	
 	private Setor setor;
-	private ArrayList<Setor> setores;
+	private List<Setor> setores;
 	private SetorDAO setorDAO;
 	
 	
@@ -19,7 +19,8 @@ public class SetorMB {
 		setor = new Setor();
 		setores = new ArrayList<Setor>();
 		setorDAO = new SetorDAO();
-		
+		setores = setorDAO.getLista();
+			
 	}
 	
 	public Setor getSetor() {
@@ -30,7 +31,7 @@ public class SetorMB {
 		this.setor = setor;
 	}
 	
-	public ArrayList<Setor> getSetores() {
+	public List<Setor> getSetores() {
 		return setores;
 	}
 	
@@ -39,7 +40,7 @@ public class SetorMB {
 	}
 	
 	public String salvar(){
-			setorDAO.adicionar(setor);
+		setorDAO.adicionar(setor);
 		return "salvar";
 	}
 	
@@ -47,12 +48,23 @@ public class SetorMB {
 		return "voltar";
 	}
 	
+	public String voltarExibir(){
+		setores = setorDAO.getLista();
+		return "voltar";
+	}
+	
 	public String cadastrar(){
 		return "cadastrarSetor";
 	}
 	
-	public String pesquisar(){
+	public String pesquisar(){	
+		setores = setorDAO.getLista(setor);	
 		return "pesquisarSetor";
+	}
+	
+	public String exibir(){
+		setores = setorDAO.getLista();
+		return "exibirSetores";
 	}
 	
 	public String alterar(){
